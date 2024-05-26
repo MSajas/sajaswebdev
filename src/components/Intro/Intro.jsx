@@ -14,6 +14,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { TypeAnimation } from 'react-type-animation';
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -31,11 +32,27 @@ const Intro = () => {
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span> Sajas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work. A highly motivated web developer
- 
-          </span>
+          
+          <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Frontend Developer with high level of experience in web designing and development, producting the Quality work. ',
+         // wait 1s before replacing "Mice" with "Hamsters"
+        'A highly motivated Forward-thinking, innovative UX designer  with more than 1 years of experience web developer to provide user interaction and experience design, web modelling, client introductions, market analysis, and concept art in a fast-paced, challenging environmentfor excellent web and mobile user experience.',
+        
+        ' ',
+        
+        
+         
+        
+      ]}
+      wrapper="span"
+      speed={30}
+      style={{ fontSize: '2em', display: 'inline-block' }}
+      repeat={Infinity}
+      
+    />
+           
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>

@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-scroll";
 import { Container, Row, Col } from "reactstrap";
 const navbar = () => {
+
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
