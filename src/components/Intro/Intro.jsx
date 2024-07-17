@@ -31,7 +31,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span> Saja</span>
+          <span> Sajas</span>
           
           <TypeAnimation
       sequence={[
